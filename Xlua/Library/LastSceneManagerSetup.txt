@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Plugins/Scene/Lua.unity
-  isLoaded: 1
-  isActive: 1
