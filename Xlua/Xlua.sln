@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{25B72580-A75B-D730-05B1-A3DB36E4EF24}") = "Xlua", "Assembly-CSharp-firstpass.csproj", "{7117DEB3-DE6D-B00C-ED69-CF36CCBF81DA}"
+EndProject
+Project("{25B72580-A75B-D730-05B1-A3DB36E4EF24}") = "Xlua", "Assembly-CSharp-Editor-firstpass.csproj", "{45EC9E9E-0C90-6F36-9046-CEEFD0189C09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7117DEB3-DE6D-B00C-ED69-CF36CCBF81DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7117DEB3-DE6D-B00C-ED69-CF36CCBF81DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7117DEB3-DE6D-B00C-ED69-CF36CCBF81DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7117DEB3-DE6D-B00C-ED69-CF36CCBF81DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45EC9E9E-0C90-6F36-9046-CEEFD0189C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45EC9E9E-0C90-6F36-9046-CEEFD0189C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45EC9E9E-0C90-6F36-9046-CEEFD0189C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45EC9E9E-0C90-6F36-9046-CEEFD0189C09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
