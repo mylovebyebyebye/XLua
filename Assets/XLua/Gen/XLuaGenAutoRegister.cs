@@ -49,6 +49,18 @@ namespace XLua.CSObjectWrap
 				
 				translator.DelayWrapLoader(typeof(FooExtension), FooExtensionWrap.__Register);
 				
+				translator.DelayWrapLoader(typeof(System.Reflection.MethodBase), SystemReflectionMethodBaseWrap.__Register);
+				
+				translator.DelayWrapLoader(typeof(long), SystemInt64Wrap.__Register);
+				
+				translator.DelayWrapLoader(typeof(System.Reflection.MethodInfo), SystemReflectionMethodInfoWrap.__Register);
+				
+				translator.DelayWrapLoader(typeof(System.TimeSpan), SystemTimeSpanWrap.__Register);
+				
+				translator.DelayWrapLoader(typeof(UniRx.Observable), UniRxObservableWrap.__Register);
+				
+				translator.DelayWrapLoader(typeof(UniRx.Observer), UniRxObserverWrap.__Register);
+				
 				translator.DelayWrapLoader(typeof(object), SystemObjectWrap.__Register);
 				
 				translator.DelayWrapLoader(typeof(UnityEngine.Object), UnityEngineObjectWrap.__Register);

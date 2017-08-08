@@ -14,9 +14,14 @@ using XLua;
 //配置的详细介绍请看Doc下《XLua的配置.doc》
 public static class ExampleGenConfig
 {
-    //lua中要使用到C#库的配置，比如C#标准库，或者Unity API，第三方库等。
-    [LuaCallCSharp]
-    public static List<Type> LuaCallCSharp = new List<Type>() {
+  //lua中要使用到C#库的配置，比如C#标准库，或者Unity API，第三方库等。
+  [LuaCallCSharp]
+  public static List<Type> LuaCallCSharp = new List<Type>() {
+                typeof(System.Int64),
+                typeof(System.Reflection.MethodInfo),
+                typeof(System.TimeSpan),
+                typeof(UniRx.Observable),
+                typeof(UniRx.Observer),
                 typeof(System.Object),
                 typeof(UnityEngine.Object),
                 typeof(Vector2),
@@ -44,12 +49,12 @@ public static class ExampleGenConfig
                 typeof(WWW),
                 typeof(System.Collections.Generic.List<int>),
                 typeof(Action<string>),
-                typeof(UnityEngine.Debug)
+                typeof(UnityEngine.Debug),
             };
 
-    //C#静态调用Lua的配置（包括事件的原型），仅可以配delegate，interface
-    [CSharpCallLua]
-    public static List<Type> CSharpCallLua = new List<Type>() {
+  //C#静态调用Lua的配置（包括事件的原型），仅可以配delegate，interface
+  [CSharpCallLua]
+  public static List<Type> CSharpCallLua = new List<Type>() {
                 typeof(Action),
                 typeof(Func<double, double, double>),
                 typeof(Action<string>),
@@ -58,9 +63,9 @@ public static class ExampleGenConfig
                 typeof(System.Collections.IEnumerator)
             };
 
-    //黑名单
-    [BlackList]
-    public static List<List<string>> BlackList = new List<List<string>>()  {
+  //黑名单
+  [BlackList]
+  public static List<List<string>> BlackList = new List<List<string>>()  {
                 new List<string>(){"UnityEngine.WWW", "movie"},
                 new List<string>(){"UnityEngine.Texture2D", "alphaIsTransparency"},
                 new List<string>(){"UnityEngine.Security", "GetChainOfTrustValue"},
